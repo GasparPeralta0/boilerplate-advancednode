@@ -9,7 +9,7 @@ const app = express();
 
 /* ---------- PUG CONFIG ---------- */
 app.set('view engine', 'pug');
-app.set('views', './views/pug');
+app.set('views', process.cwd() + '/views/pug');
 
 /* ---------- FCC TESTING ---------- */
 fccTesting(app);
